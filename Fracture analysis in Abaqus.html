@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Comparison of Crack Propagation Methods – XFEM vs. Contour Integral</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    h1, h2 {
+      color: #004080;
+    }
+    .video-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      margin-top: 30px;
+    }
+    video {
+      width: 80%;
+      max-width: 1000px;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    p, ul {
+      max-width: 1000px;
+      margin: auto;
+    }
+    ul {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Comparison of Two Crack Analysis Methods in Abaqus</h1>
+
+<p>This project simulated and compared two different approaches for evaluating crack behavior in a loaded plate using Abaqus:</p>
+
+<ul>
+  <li><strong>XFEM:</strong> Simulation of crack propagation using the Extended Finite Element Method (independent of the mesh).</li>
+  <li><strong>Contour Integral Method:</strong> Post-processing method to calculate Stress Intensity Factors (SIF) and J-integrals for fracture mechanics evaluation.</li>
+</ul>
+
+<p>Both methods were applied in Abaqus. The following videos show the stress distribution and crack development for each method.</p>
+
+<div>
+  <h2>Crack Propagation with XFEM</h2>
+  <video autoplay loop muted playsinline>
+    <source src="Vonmisesstress_XFEM.mp4" type="video/mp4">
+    Your browser does not support this video format.
+  </video>
+</div>
+
+<div>
+  <h2>Evaluation with Contour Integral</h2>
+  <video autoplay loop muted playsinline>
+    <source src="Vonmisesstress_contour.mp4" type="video/mp4">
+    Your browser does not support this video format.
+  </video>
+</div>
+
+</body>
+</html>
